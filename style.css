@@ -425,6 +425,7 @@ h4
 
 .center
 {
+  margin: auto;
   text-align: center;
 }
 
@@ -551,6 +552,15 @@ h4
 .grow
 {
   flex: 1;
+}
+
+
+.split_content {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  margin: 2.5rem 0rem;
+  margin-top: 10rem;
+  /* background-color: #5789b8; */
 }
 
 .footer h4
@@ -735,6 +745,11 @@ hr
     flex-direction: column;
     gap: 3rem;
   }
+
+  .split_content
+  {
+    grid-template-columns: 1fr
+  }
 }
 
 @media (min-width: 1024px) {
@@ -867,12 +882,4 @@ hr
 .featured img
 {
   width: 360px;
-}
-
-.split_content {
-  display: grid;
-  grid-template-columns: 4fr 5fr;
-  margin: 2.5rem 0rem;
-  margin-top: 10rem;
-  /* background-color: #5789b8; */
 }
