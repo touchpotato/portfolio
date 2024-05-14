@@ -12,6 +12,8 @@ make modal or reuse old modal for design and car page images.
 ------------------------------------add next project feature
 --------------------------------------FIX MOBILE BURGER MENU *
 
+go through css and combine display flex row
+
 ---------------------------------CHANGE TEXT FOR CAR PAGE-->
 <html lang="en">
 
@@ -53,7 +55,7 @@ make modal or reuse old modal for design and car page images.
                     <ul>
                         <li><a href="#home" class="active">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <!-- <li><a href="work.html">Portfolio</a></li> -->
+                        <li><a href="portfolio.html">Portfolio</a></li>
                         <button class="btn"><a href="#footer">Contact Me</a></button>
                     </ul>
                 </div>
@@ -86,7 +88,7 @@ make modal or reuse old modal for design and car page images.
             <p class="paragraph">bring creativity to every project.</p>
         </div>
         <div class="container content">
-            <div class="hero-flex">
+            <div class="hero-flex row-between">
                 <div>
                     <p class="paragraph">PERSONAL WEBSITE</p>
                     <!-- UPDATE TO PLAY SHOWREEL WHEN VIDEO DONE -->
@@ -98,52 +100,37 @@ make modal or reuse old modal for design and car page images.
                     <p class="paragraph">SCROLL DOWN <span class="fa-solid fa-arrow-down"></span></p>
                 </div>
             </div>
-            <div class="hero-flex">
+            <div class="hero-flex row-between">
                 <h1>Eben</h1>
                 <h1 class="center">-</h1>
                 <h1 class="right">Mullin</h1>
             </div>
-            <!-- <h1>EBEN MULLIN</h1> -->
         </div>
     </div>
     <div class="container">
         <section class="section" id="about">
-            <img class="aligner-flex" src="assets/logo5.png" width="256px" height="256px" alt="logo">
-            <h3>About me</h3>
-            <div class="aligner-flex">
-                <div class="left">
-                    <p class="paragraph">
-                        Hi there! I'm a student from Taranaki, New Zealand. <br>
-                        I love graphic design, video production, and coding. I'm skilled in filmmaking, designing
-                        websites, and creating 3D models. <br>
-                        I am very proud of my graphic design scholarship that I won during my time at Spotswood.
-
-                        <br> <br> <br>
-                        Scroll down below to check out some of my projects.
-                    </p>
-                    <br>
-                </div>
-                <div class="info">
-                    <div class="text-col">
-                        <h4>Info</h4>
-                        <ul>
-                            <li>Eben Mullin</li>
-                            <li>Age: 18</li>
-                        </ul>
-                        <br>
-                    </div>
-                    <div class="text-col">
-                        <h4>Awards</h4>
-                        <ul>
-                            <li>1x Evolocity Excellence in engineering</li>
-                            <li>2x First In Electronics, Year 12 & 13</li>
-                            <li>1x First In design, Year 13</li>
-                            <li>1x Graphic Design Scholarship Award Year 13</li>
-                        </ul>
-                        <br>
-                    </div>
-                    <h4>Email me</h4>
+            <img class="flex-between" src="assets/logo5.png" width="256px" height="256px" alt="logo">
+            <div class="split_content">
+                <div>
+                    <div class="idk">About.</div>
+                    <br><br><br>
+                    <h4>Email</h4>
                     <p><a href="mailto:ebminer05@gmail.com">ebminer05@gmail.com</a></p>
+                    <!-- <h4>Awards</h4>
+                    <ul>
+                        <li>1x Evolocity Excellence in engineering</li>
+                        <li>2x First In Electronics, Year 12 & 13</li>
+                        <li>1x First In design, Year 13</li>
+                        <li>1x Graphic Design Scholarship Award Year 13</li>
+                    </ul> -->
+                </div>
+                <div>
+                    <p class="paragraph">Hi there! I'm a student from Taranaki, New Zealand.</p>
+                    <p class="paragraph">I love graphic design, video production, and coding. I'm skilled in filmmaking, designing
+                        websites, and creating 3D models.</p>
+                    <p class="paragraph">I am very proud of my graphic design scholarship that I won during my time at Spotswood.</p>
+                    <br><br><br>
+                    <p class="paragraph">Scroll down below to check out some of my projects.</p>
                 </div>
             </div>
         </section>
@@ -168,7 +155,10 @@ make modal or reuse old modal for design and car page images.
                         <h3>3D Car Designs</h3>
                         <p class="paragraph">I have started working on designing cars in Photoshop,
                             then bringing them to 3D with Blender.
-                            This is one of my cars that I've been working on for the past three months.</p>
+                            This is one of my cars that I've been working on for the past three months.
+                        </p>
+                        <br><br>
+                        <button class="btn-label"><a href="model.html#info">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -191,9 +181,10 @@ make modal or reuse old modal for design and car page images.
                     <h3>DESIGN SCHOLARSHIP</h3>
                     <p class="paragraph">Last year, I was awarded a graphic design scholarship for my Aerocore project.
                         the video was limited to three minutes, so feel free to pause and read at your
-                        own pace.</p>
+                        own pace.
+                    </p>
                     <br><br>
-                    <p class="paragraph"><a href="design.html#info"> VIEW PROJECT <span class="fa-solid fa-arrow-right"></span></a></p>
+                    <button class="btn-label"><a href="design.html#info">View Project</a></button>
                 </div>
             </div>
             <hr>
@@ -216,7 +207,8 @@ make modal or reuse old modal for design and car page images.
                         <h3>FPV Drone Footage</h3>
                         <p class="paragraph">
                             I built my own drone so I can offer Drone footage as a service.
-                            Here is some of my footage and the build process</p>
+                            Here is some of my footage and the build process
+                        </p>
                     </div>
                 </div>
             </div>
@@ -239,9 +231,11 @@ make modal or reuse old modal for design and car page images.
                     <div class="text-col">
                         <h3>Automotive Media</h3>
                         <p class="paragraph">Im very interested In cars and anything with an engine, I have recently
-                            made a few films on youtube. This one was a short film showing a c6 corvette</p>
+                            made a few films on youtube. This one was a short film showing a c6 corvette
+                        </p>
                         <br><br>
-                        <p class="paragraph"><a href="car.html#info"> VIEW PROJECT <span class="fa-solid fa-arrow-right"></span></a></p>
+                        <br><br>
+                        <button class="btn-label"><a href="car.html#info">View Project</a></button>
                     </div>
                 </div>
             </div>
@@ -249,7 +243,7 @@ make modal or reuse old modal for design and car page images.
     </div>
     <footer class="footer" id="footer">
         <div class="container">
-            <div class="row">
+            <div class="row-between">
                 <div class="grow">
                     <h4>Get In Touch</h4>
                     <ul>
@@ -273,7 +267,7 @@ make modal or reuse old modal for design and car page images.
                         <ul>
                             <li><a href="index.html">Drone</a></li>
                             <li><a href="#about">Film</a></li>
-                            <li><a href="work.html">3D Work</a></li>
+                            <li><a href="portfolio.html">3D Work</a></li>
                             <li><a href="contact.html">Graphic Design</a></li>
                         </ul>
                     </div>
@@ -282,7 +276,7 @@ make modal or reuse old modal for design and car page images.
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="work.html">Portfolio</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
                             <!-- <li><a href="contact.html"><span class="fa-solid fa-message"></span> Contact</a></li> -->
                         </ul>
                     </div>

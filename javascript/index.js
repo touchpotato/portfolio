@@ -91,3 +91,25 @@ function resize() {
 }
 vid.onload = resize;
 window.onresize = resize;
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const categories = document.querySelectorAll(".category");
+  const imageItems = document.querySelectorAll(".gallery");
+
+  categories.forEach(category => {
+    category.addEventListener("click", function(e) {
+      e.preventDefault();
+      const filter = this.getAttribute("data-filter");
+
+      imageItems.forEach(item => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+});
